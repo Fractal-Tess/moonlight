@@ -1,5 +1,5 @@
 {
-  "name": "starlight-theme-rapide-docs",
+  "name": "starlight-theme-moonlight-docs",
   "version": "0.2.1",
   "license": "MIT",
   "description": "Starlight theme inspired by the Visual Studio Code Vitesse theme.",
@@ -16,7 +16,7 @@
     "@hideoo/starlight-plugins-docs-components": "^0.4.0",
     "astro": "^5.7.4",
     "sharp": "^0.33.5",
-    "starlight-theme-rapide": "workspace:*"
+    "starlight-theme-moonlight": "workspace:*"
   },
   "engines": {
     "node": ">=18"
@@ -27,17 +27,17 @@
   "keywords": [
     "starlight",
     "theme",
-    "rapide",
+    "moonlight",
     "vitesse",
     "plugin",
     "documentation",
     "astro"
   ],
-  "homepage": "https://github.com/HiDeoo/starlight-theme-rapide",
+  "homepage": "https://github.com/HiDeoo/starlight-theme-moonlight",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/starlight-theme-rapide.git",
+    "url": "https://github.com/HiDeoo/starlight-theme-moonlight.git",
     "directory": "docs"
   },
-  "bugs": "https://github.com/HiDeoo/starlight-theme-rapide/issues"
+  "bugs": "https://github.com/HiDeoo/starlight-theme-moonlight/issues"
 }

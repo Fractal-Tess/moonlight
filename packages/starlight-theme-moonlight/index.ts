@@ -2,9 +2,9 @@ import type { StarlightPlugin } from '@astrojs/starlight/types'
 
 import { overrideComponents } from './libs/starlight'
 
-export default function starlightThemeRapidePlugin(): StarlightPlugin {
+export default function starlightThememoonlightPlugin(): StarlightPlugin {
   return {
-    name: 'starlight-theme-rapide',
+    name: 'starlight-theme-moonlight',
     hooks: {
       'config:setup'({ config, logger, updateConfig }) {
         const userExpressiveCodeConfig =
@@ -14,10 +14,10 @@ export default function starlightThemeRapidePlugin(): StarlightPlugin {
           components: overrideComponents(config, ['LanguageSelect', 'Pagination', 'ThemeSelect'], logger),
           customCss: [
             ...(config.customCss ?? []),
-            'starlight-theme-rapide/styles/layers',
-            'starlight-theme-rapide/styles/theme',
-            'starlight-theme-rapide/styles/base',
-            ...(config.markdown?.headingLinks === false ? [] : ['starlight-theme-rapide/styles/anchors']),
+            'starlight-theme-moonlight/styles/layers',
+            'starlight-theme-moonlight/styles/theme',
+            'starlight-theme-moonlight/styles/base',
+            ...(config.markdown?.headingLinks === false ? [] : ['starlight-theme-moonlight/styles/anchors']),
           ],
           expressiveCode:
             config.expressiveCode === false
@@ -26,20 +26,20 @@ export default function starlightThemeRapidePlugin(): StarlightPlugin {
                   themes: ['vitesse-dark', 'vitesse-light'],
                   ...userExpressiveCodeConfig,
                   styleOverrides: {
-                    borderColor: 'var(--sl-rapide-ui-border-color)',
+                    borderColor: 'var(--sl-moonlight-ui-border-color)',
                     borderRadius: '0.5rem',
                     ...userExpressiveCodeConfig.styleOverrides,
                     frames: {
                       editorActiveTabIndicatorTopColor: 'unset',
                       editorActiveTabIndicatorBottomColor: 'var(--sl-color-gray-3)',
-                      editorTabBarBorderBottomColor: 'var(--sl-rapide-ui-border-color)',
+                      editorTabBarBorderBottomColor: 'var(--sl-moonlight-ui-border-color)',
                       frameBoxShadowCssValue: 'unset',
                       ...userExpressiveCodeConfig.styleOverrides?.frames,
                     },
                     textMarkers: {
                       backgroundOpacity: '40%',
-                      markBackground: 'var(--sl-rapide-ec-marker-bg-color)',
-                      markBorderColor: 'var(--sl-rapide-ec-marker-border-color)',
+                      markBackground: 'var(--sl-moonlight-ec-marker-bg-color)',
+                      markBorderColor: 'var(--sl-moonlight-ec-marker-border-color)',
                       ...userExpressiveCodeConfig.styleOverrides?.textMarkers,
                     },
                   },

@@ -1,14 +1,14 @@
-@layer rapide {
+@layer moonlight {
   /**
    * Common
    */
   :root,
   ::backdrop {
-    --sl-hue-base: 17;
+    --sl-hue-base: 220;
     --sl-hue-orange: 84;
-    --sl-hue-green: 164;
-    --sl-hue-blue: 274;
-    --sl-hue-purple: 314;
+    --sl-hue-green: 220;
+    --sl-hue-blue: 220;
+    --sl-hue-purple: 280;
     --sl-hue-red: 13;
 
     --sl-text-h1: var(--sl-text-3xl);
@@ -47,13 +47,13 @@
     --sl-color-green-accent: oklch(93% 0.054 var(--sl-hue-green));
     --sl-color-green-accent-invert: oklch(66% 0.14 var(--sl-hue-green));
 
-    --sl-color-blue-low: oklch(20% 0.02 var(--sl-hue-blue));
-    --sl-color-blue: oklch(56% 0.181 var(--sl-hue-blue));
-    --sl-color-blue-high: oklch(86% 0.054 var(--sl-hue-blue));
-    --sl-color-blue-accent: oklch(89% 0.05 var(--sl-hue-blue));
-    --sl-color-blue-accent-invert: oklch(66% 0.154 var(--sl-hue-blue));
-    --sl-color-blue-alt: oklch(21.5% 0.02 var(--sl-hue-blue));
-    --sl-color-blue-alt-invert: oklch(36% 0.034 var(--sl-hue-blue));
+    --sl-color-blue-low: oklch(18% 0.025 var(--sl-hue-blue));
+    --sl-color-blue: oklch(58% 0.22 var(--sl-hue-blue));
+    --sl-color-blue-high: oklch(88% 0.08 var(--sl-hue-blue));
+    --sl-color-blue-accent: oklch(92% 0.06 var(--sl-hue-blue));
+    --sl-color-blue-accent-invert: oklch(68% 0.18 var(--sl-hue-blue));
+    --sl-color-blue-alt: oklch(20% 0.025 var(--sl-hue-blue));
+    --sl-color-blue-alt-invert: oklch(38% 0.04 var(--sl-hue-blue));
 
     --sl-color-purple-low: oklch(22% 0.012 var(--sl-hue-purple));
     --sl-color-purple: oklch(59% 0.166 var(--sl-hue-purple));
@@ -71,7 +71,7 @@
     --sl-color-red-alt: oklch(21.5% 0.018 var(--sl-hue-red));
     --sl-color-red-alt-invert: oklch(37% 0.03 var(--sl-hue-red));
 
-    --sl-hue-accent: 164;
+    --sl-hue-accent: 220;
     --sl-color-accent-low: oklch(19% 0.02 var(--sl-hue-accent));
     --sl-color-accent: oklch(50% 0.085 var(--sl-hue-accent));
     --sl-color-accent-high: oklch(61% 0.085 var(--sl-hue-accent));
@@ -80,12 +80,12 @@
     --sl-color-bg-sidebar: var(--sl-color-black);
     --sl-color-backdrop-overlay: oklch(24% 0.002 var(--sl-hue-base) / 0.7);
 
-    --sl-rapide-ui-bg-color: oklch(18% 0 0);
-    --sl-rapide-ui-header-bg-color: oklch(18% 0.002 var(--sl-hue-base) / 0.8);
-    --sl-rapide-ui-border-color: oklch(28% 0.004 var(--sl-hue-base));
+    --sl-moonlight-ui-bg-color: oklch(18% 0.005 220);
+    --sl-moonlight-ui-header-bg-color: oklch(18% 0.008 220 / 0.8);
+    --sl-moonlight-ui-border-color: oklch(28% 0.01 220);
 
-    --sl-rapide-ec-marker-bg-color: oklch(27% 0.002 var(--sl-hue-base));
-    --sl-rapide-ec-marker-border-color: oklch(47% 0.002 var(--sl-hue-base));
+    --sl-moonlight-ec-marker-bg-color: oklch(27% 0.005 220);
+    --sl-moonlight-ec-marker-border-color: oklch(47% 0.008 220);
   }
 
   /**
@@ -117,13 +117,13 @@
     --sl-color-green-accent: oklch(36% 0.07 var(--sl-hue-green));
     --sl-color-green-accent-invert: oklch(50% 0.1 var(--sl-hue-green));
 
-    --sl-color-blue-low: oklch(95% 0.02 var(--sl-hue-blue));
-    --sl-color-blue: oklch(66% 0.15 var(--sl-hue-blue));
-    --sl-color-blue-high: oklch(40% 0.102 var(--sl-hue-blue));
-    --sl-color-blue-accent: oklch(35% 0.1 var(--sl-hue-blue));
-    --sl-color-blue-accent-invert: oklch(52% 0.2 var(--sl-hue-blue));
-    --sl-color-blue-alt: oklch(93% 0.03 var(--sl-hue-blue));
-    --sl-color-blue-alt-invert: oklch(77% 0.05 var(--sl-hue-blue));
+    --sl-color-blue-low: oklch(95% 0.025 var(--sl-hue-blue));
+    --sl-color-blue: oklch(68% 0.18 var(--sl-hue-blue));
+    --sl-color-blue-high: oklch(42% 0.12 var(--sl-hue-blue));
+    --sl-color-blue-accent: oklch(37% 0.12 var(--sl-hue-blue));
+    --sl-color-blue-accent-invert: oklch(54% 0.22 var(--sl-hue-blue));
+    --sl-color-blue-alt: oklch(93% 0.035 var(--sl-hue-blue));
+    --sl-color-blue-alt-invert: oklch(79% 0.06 var(--sl-hue-blue));
 
     --sl-color-purple-low: oklch(95% 0.02 var(--sl-hue-purple));
     --sl-color-purple: oklch(66% 0.15 var(--sl-hue-purple));
@@ -141,18 +141,18 @@
     --sl-color-red-alt: oklch(94% 0.02 var(--sl-hue-red));
     --sl-color-red-alt-invert: oklch(78% 0.04 var(--sl-hue-red));
 
-    --sl-hue-accent: 160;
+    --sl-hue-accent: 220;
     --sl-color-accent-low: oklch(96% 0.015 var(--sl-hue-accent));
     --sl-color-accent: oklch(53% 0.1197 var(--sl-hue-accent));
     --sl-color-accent-high: oklch(46% 0.104 var(--sl-hue-accent));
 
     --sl-color-backdrop-overlay: oklch(84% 0.003 var(--sl-hue-base) / 0.7);
 
-    --sl-rapide-ui-bg-color: oklch(100% 0 0);
-    --sl-rapide-ui-header-bg-color: oklch(98% 0.002 var(--sl-hue-base) / 0.7);
-    --sl-rapide-ui-border-color: oklch(88% 0.004 var(--sl-hue-base));
+    --sl-moonlight-ui-bg-color: oklch(100% 0.005 220);
+    --sl-moonlight-ui-header-bg-color: oklch(98% 0.008 220 / 0.7);
+    --sl-moonlight-ui-border-color: oklch(88% 0.01 220);
 
-    --sl-rapide-ec-marker-bg-color: oklch(93% 0.002 var(--sl-hue-base));
-    --sl-rapide-ec-marker-border-color: oklch(62% 0.002 var(--sl-hue-base));
+    --sl-moonlight-ec-marker-bg-color: oklch(93% 0.005 220);
+    --sl-moonlight-ec-marker-border-color: oklch(62% 0.008 220);
   }
 }

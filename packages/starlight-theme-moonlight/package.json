@@ -1,5 +1,5 @@
 {
-  "name": "starlight-theme-rapide",
+  "name": "starlight-theme-moonlight",
   "version": "0.5.1",
   "license": "MIT",
   "description": "Starlight theme inspired by the Visual Studio Code Vitesse theme.",
@@ -34,17 +34,17 @@
   "keywords": [
     "starlight",
     "theme",
-    "rapide",
+    "moonlight",
     "vitesse",
     "plugin",
     "documentation",
     "astro"
   ],
-  "homepage": "https://github.com/HiDeoo/starlight-theme-rapide",
+  "homepage": "https://github.com/HiDeoo/starlight-theme-moonlight",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/starlight-theme-rapide.git",
-    "directory": "packages/starlight-theme-rapide"
+    "url": "https://github.com/HiDeoo/starlight-theme-moonlight.git",
+    "directory": "packages/starlight-theme-moonlight"
   },
-  "bugs": "https://github.com/HiDeoo/starlight-theme-rapide/issues"
+  "bugs": "https://github.com/HiDeoo/starlight-theme-moonlight/issues"
 }

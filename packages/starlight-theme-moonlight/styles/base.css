@@ -1,11 +1,11 @@
-@layer rapide {
+@layer moonlight {
   /**
    * Header
    */
   header.header {
     -webkit-backdrop-filter: blur(0.5rem);
     backdrop-filter: blur(0.5rem);
-    background-color: var(--sl-rapide-ui-header-bg-color);
+    background-color: var(--sl-moonlight-ui-header-bg-color);
     border-bottom: 1px solid var(--sl-color-gray-5);
 
     .site-title {
@@ -40,7 +40,7 @@
 
       select {
         box-sizing: content-box;
-        width: calc(var(--sl-rapide-lang-select-width));
+        width: calc(var(--sl-moonlight-lang-select-width));
       }
     }
 
@@ -91,7 +91,7 @@
       }
 
       .pagefind-ui__search-input {
-        background-color: var(--sl-rapide-ui-bg-color);
+        background-color: var(--sl-moonlight-ui-bg-color);
         border: 1px solid var(--sl-color-gray-4);
 
         &:focus-visible {
@@ -109,11 +109,11 @@
       }
 
       :is(.pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)), .pagefind-ui__result-nested) {
-        border-inline: 1px solid var(--sl-rapide-ui-border-color);
+        border-inline: 1px solid var(--sl-moonlight-ui-border-color);
         outline-offset: -1px;
 
         &:not(:focus-within) {
-          background-color: var(--sl-rapide-ui-bg-color);
+          background-color: var(--sl-moonlight-ui-bg-color);
         }
       }
 
@@ -121,11 +121,11 @@
         gap: 0;
 
         & > :first-child {
-          border-top: 1px solid var(--sl-rapide-ui-border-color);
+          border-top: 1px solid var(--sl-moonlight-ui-border-color);
         }
 
         & > :last-child {
-          border-bottom: 1px solid var(--sl-rapide-ui-border-color);
+          border-bottom: 1px solid var(--sl-moonlight-ui-border-color);
         }
       }
 
@@ -135,11 +135,11 @@
 
       @media (prefers-reduced-motion: no-preference) {
         &::backdrop {
-          animation: sl-rapide-search-backdrop-fade 150ms ease-out;
+          animation: sl-moonlight-search-backdrop-fade 150ms ease-out;
         }
 
         & {
-          animation: sl-rapide-search-dialog-zoom-in 150ms ease-out;
+          animation: sl-moonlight-search-dialog-zoom-in 150ms ease-out;
         }
       }
     }
@@ -157,7 +157,7 @@
     }
   }
 
-  @keyframes sl-rapide-search-backdrop-fade {
+  @keyframes sl-moonlight-search-backdrop-fade {
     from {
       -webkit-backdrop-filter: initial;
       backdrop-filter: initial;
@@ -171,7 +171,7 @@
     }
   }
 
-  @keyframes sl-rapide-search-dialog-zoom-in {
+  @keyframes sl-moonlight-search-dialog-zoom-in {
     from {
       opacity: 0;
       transform: scale(0.5) translateY(-2rem);
@@ -322,7 +322,7 @@
     nav {
       -webkit-backdrop-filter: blur(0.5rem);
       backdrop-filter: blur(0.5rem);
-      background-color: var(--sl-rapide-ui-header-bg-color);
+      background-color: var(--sl-moonlight-ui-header-bg-color);
       border-bottom: 1px solid var(--sl-color-gray-5);
       border-top-color: transparent;
 
@@ -348,7 +348,7 @@
       border-bottom: var(--border-top) solid var(--sl-color-gray-6);
 
       a:is(:hover, :focus-visible) {
-        background-color: var(--sl-rapide-ui-bg-color);
+        background-color: var(--sl-moonlight-ui-bg-color);
         color: var(--sl-color-accent-high);
       }
     }
@@ -399,7 +399,7 @@
       }
 
       .frame.is-terminal .header {
-        border-bottom: 1px solid var(--sl-rapide-ui-border-color);
+        border-bottom: 1px solid var(--sl-moonlight-ui-border-color);
       }
     }
   }
@@ -477,35 +477,35 @@
    */
   .starlight-aside {
     &.starlight-aside--note {
-      --sl-rapide-asides-bg-color: var(--sl-color-blue-low);
-      --sl-rapide-asides-link-color: var(--sl-color-blue-accent);
-      --sl-rapide-asides-link-hover-color: var(--sl-color-blue-accent-invert);
-      --sl-rapide-asides-table-alt-color: var(--sl-color-blue-alt);
-      --sl-rapide-asides-table-border-color: var(--sl-color-blue-alt-invert);
+      --sl-moonlight-asides-bg-color: var(--sl-color-blue-low);
+      --sl-moonlight-asides-link-color: var(--sl-color-blue-accent);
+      --sl-moonlight-asides-link-hover-color: var(--sl-color-blue-accent-invert);
+      --sl-moonlight-asides-table-alt-color: var(--sl-color-blue-alt);
+      --sl-moonlight-asides-table-border-color: var(--sl-color-blue-alt-invert);
     }
 
     &.starlight-aside--tip {
-      --sl-rapide-asides-bg-color: var(--sl-color-purple-low);
-      --sl-rapide-asides-link-color: var(--sl-color-purple-accent);
-      --sl-rapide-asides-link-hover-color: var(--sl-color-purple-accent-invert);
-      --sl-rapide-asides-table-alt-color: var(--sl-color-purple-alt);
-      --sl-rapide-asides-table-border-color: var(--sl-color-purple-alt-invert);
+      --sl-moonlight-asides-bg-color: var(--sl-color-purple-low);
+      --sl-moonlight-asides-link-color: var(--sl-color-purple-accent);
+      --sl-moonlight-asides-link-hover-color: var(--sl-color-purple-accent-invert);
+      --sl-moonlight-asides-table-alt-color: var(--sl-color-purple-alt);
+      --sl-moonlight-asides-table-border-color: var(--sl-color-purple-alt-invert);
     }
 
     &.starlight-aside--caution {
-      --sl-rapide-asides-bg-color: var(--sl-color-orange-low);
-      --sl-rapide-asides-link-color: var(--sl-color-orange-accent);
-      --sl-rapide-asides-link-hover-color: var(--sl-color-orange-accent-invert);
-      --sl-rapide-asides-table-alt-color: var(--sl-color-orange-alt);
-      --sl-rapide-asides-table-border-color: var(--sl-color-orange-alt-invert);
+      --sl-moonlight-asides-bg-color: var(--sl-color-orange-low);
+      --sl-moonlight-asides-link-color: var(--sl-color-orange-accent);
+      --sl-moonlight-asides-link-hover-color: var(--sl-color-orange-accent-invert);
+      --sl-moonlight-asides-table-alt-color: var(--sl-color-orange-alt);
+      --sl-moonlight-asides-table-border-color: var(--sl-color-orange-alt-invert);
     }
 
     &.starlight-aside--danger {
-      --sl-rapide-asides-bg-color: var(--sl-color-red-low);
-      --sl-rapide-asides-link-color: var(--sl-color-red-accent);
-      --sl-rapide-asides-link-hover-color: var(--sl-color-red-accent-invert);
-      --sl-rapide-asides-table-alt-color: var(--sl-color-red-alt);
-      --sl-rapide-asides-table-border-color: var(--sl-color-red-alt-invert);
+      --sl-moonlight-asides-bg-color: var(--sl-color-red-low);
+      --sl-moonlight-asides-link-color: var(--sl-color-red-accent);
+      --sl-moonlight-asides-link-hover-color: var(--sl-color-red-accent-invert);
+      --sl-moonlight-asides-table-alt-color: var(--sl-color-red-alt);
+      --sl-moonlight-asides-table-border-color: var(--sl-color-red-alt-invert);
     }
 
     border: 1px solid var(--sl-color-asides-border);
@@ -513,19 +513,19 @@
     color: var(--sl-color-asides-text-accent);
 
     a {
-      color: var(--sl-rapide-asides-link-color);
+      color: var(--sl-moonlight-asides-link-color);
     }
 
     a:is(:hover, :focus-visible) {
-      color: var(--sl-rapide-asides-link-hover-color);
+      color: var(--sl-moonlight-asides-link-hover-color);
     }
 
     tr:nth-child(2n) {
-      background-color: var(--sl-rapide-asides-table-alt-color);
+      background-color: var(--sl-moonlight-asides-table-alt-color);
     }
 
     td {
-      border-color: var(--sl-rapide-asides-table-border-color);
+      border-color: var(--sl-moonlight-asides-table-border-color);
     }
   }
 
@@ -533,8 +533,8 @@
    * File tree
    */
   starlight-file-tree {
-    background-color: var(--sl-rapide-ui-bg-color);
-    border: 1px solid var(--sl-rapide-ui-border-color);
+    background-color: var(--sl-moonlight-ui-bg-color);
+    border: 1px solid var(--sl-moonlight-ui-border-color);
     border-radius: 0.5rem;
 
     .directory > details > summary:hover ~ ul {
@@ -573,24 +573,24 @@
    * Badges
    */
   .sl-badge {
-    --sl-badge-default-text: var(--sl-color-green-high);
+    --sl-badge-default-text: var(--sl-color-blue-high);
     --sl-badge-tip-text: var(--sl-color-purple-high);
     --sl-badge-caution-text: var(--sl-color-orange-high);
     --sl-badge-note-text: var(--sl-color-blue-high);
-    --sl-badge-success-text: var(--sl-color-green-high);
+    --sl-badge-success-text: var(--sl-color-blue-high);
     --sl-badge-danger-text: var(--sl-color-red-high);
 
     [data-theme='light'] & {
-      --sl-badge-default-bg: var(--sl-color-green-low);
-      --sl-badge-default-text: var(--sl-color-green-high);
+      --sl-badge-default-bg: var(--sl-color-blue-low);
+      --sl-badge-default-text: var(--sl-color-blue-high);
       --sl-badge-tip-bg: var(--sl-color-purple-low);
       --sl-badge-tip-text: var(--sl-color-purple-high);
       --sl-badge-caution-bg: var(--sl-color-orange-low);
       --sl-badge-caution-text: var(--sl-color-orange-high);
       --sl-badge-note-bg: var(--sl-color-blue-low);
       --sl-badge-note-text: var(--sl-color-blue-high);
-      --sl-badge-success-bg: var(--sl-color-green-low);
-      --sl-badge-success-text: var(--sl-color-green-high);
+      --sl-badge-success-bg: var(--sl-color-blue-low);
+      --sl-badge-success-text: var(--sl-color-blue-high);
       --sl-badge-danger-bg: var(--sl-color-red-low);
       --sl-badge-danger-text: var(--sl-color-red-high);
     }
@@ -607,13 +607,13 @@
     }
 
     &.primary {
-      background-color: var(--sl-color-green-low);
-      border: 1px solid var(--sl-color-green);
-      color: var(--sl-color-green-high);
+      background-color: var(--sl-color-blue-low);
+      border: 1px solid var(--sl-color-blue);
+      color: var(--sl-color-blue-high);
 
       &:is(:hover, :focus-visible) {
-        border-color: oklch(52% 0.11 var(--sl-hue-green));
-        color: var(--sl-color-green-accent-invert);
+        border-color: oklch(52% 0.11 var(--sl-hue-blue));
+        color: var(--sl-color-blue-accent-invert);
       }
     }
 
@@ -640,11 +640,11 @@
    * Banner
    */
   .sl-banner {
-    background-color: var(--sl-color-green-low);
-    border: 1px solid var(--sl-color-green);
+    background-color: var(--sl-color-blue-low);
+    border: 1px solid var(--sl-color-blue);
     border-radius: 0.5rem;
     box-shadow: none;
-    color: var(--sl-color-green-high);
+    color: var(--sl-color-blue-high);
     line-height: 1.4;
     margin-block: 2rem -0.5rem;
     margin-inline: var(--sl-content-pad-x);
@@ -654,11 +654,11 @@
     text-wrap: initial;
 
     a {
-      color: var(--sl-color-green-accent);
+      color: var(--sl-color-blue-accent);
       text-underline-offset: 0.25em;
 
       &:is(:hover, :focus-visible) {
-        color: var(--sl-color-green-accent-invert);
+        color: var(--sl-color-blue-accent-invert);
       }
     }
 
