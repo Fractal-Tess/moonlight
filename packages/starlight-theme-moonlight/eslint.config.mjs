@@ -1,10 +1,10 @@
-import hideoo from '@hideoo/eslint-config'
+import hideoo from "@hideoo/eslint-config";
 
 export default hideoo({
-  ignores: ['eslint.config.mjs'],
+  ignores: ["eslint.config.mjs"],
   languageOptions: {
     parserOptions: {
-      project: ['../../tsconfig.json'],
-    },
-  },
-})
+      project: ["../../tsconfig.json"]
+    }
+  }
+});

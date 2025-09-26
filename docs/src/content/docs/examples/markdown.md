@@ -38,7 +38,7 @@ Some text content can be quoted using the `>` character.
 Code can be displayed `inline` or in a code block.
 
 ```js
-const foo = 'bar'
+const foo = "bar";
 ```
 
 ## Links

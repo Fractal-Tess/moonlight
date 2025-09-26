@@ -61,13 +61,13 @@
     button {
       box-shadow: none;
 
-      [data-theme='light'] & {
+      [data-theme="light"] & {
         background-color: var(--sl-color-white);
         color: var(--sl-color-black);
       }
     }
 
-    [data-theme='light'] &[aria-expanded='true'] button {
+    [data-theme="light"] &[aria-expanded="true"] button {
       background-color: var(--sl-color-gray-2);
     }
   }
@@ -108,7 +108,10 @@
         }
       }
 
-      :is(.pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)), .pagefind-ui__result-nested) {
+      :is(
+        .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)),
+        .pagefind-ui__result-nested
+      ) {
         border-inline: 1px solid var(--sl-moonlight-ui-border-color);
         outline-offset: -1px;
 
@@ -194,7 +197,8 @@
       gap: 0.375rem;
       justify-content: start;
       padding: 0.2em var(--sl-sidebar-item-padding-inline);
-      padding-inline: calc(var(--sl-sidebar-item-padding-inline) / 2) var(--sl-sidebar-item-padding-inline);
+      padding-inline: calc(var(--sl-sidebar-item-padding-inline) / 2)
+        var(--sl-sidebar-item-padding-inline);
 
       &:is(:hover, :focus-visible) {
         &,
@@ -209,13 +213,15 @@
     }
 
     ul ul li {
-      margin-inline-start: calc(var(--sl-sidebar-item-padding-inline) + (0.625rem / 2));
+      margin-inline-start: calc(
+        var(--sl-sidebar-item-padding-inline) + (0.625rem / 2)
+      );
 
-      &:has(> a[aria-current='page']) {
+      &:has(> a[aria-current="page"]) {
         border-inline-start-color: var(--sl-color-accent-high);
       }
 
-      &:has(> a:not([aria-current='page']):is(:hover, :focus-visible)) {
+      &:has(> a:not([aria-current="page"]):is(:hover, :focus-visible)) {
         border-inline-start-color: var(--sl-color-gray-2);
       }
     }
@@ -241,7 +247,7 @@
       }
     }
 
-    a[aria-current='page'] {
+    a[aria-current="page"] {
       background-color: initial;
       color: var(--sl-color-text-accent);
     }
@@ -298,9 +304,11 @@
         border-inline-start: 1px solid var(--sl-color-hairline-light);
         border-radius: 0;
         margin-inline-start: 0.35rem;
-        padding-inline-start: calc(1rem * var(--depth) + var(--pad-inline) + 0.35rem);
+        padding-inline-start: calc(
+          1rem * var(--depth) + var(--pad-inline) + 0.35rem
+        );
 
-        &[aria-current='true'] {
+        &[aria-current="true"] {
           border-color: var(--sl-color-accent-high);
 
           &:is(:hover, :focus-visible) {
@@ -308,7 +316,7 @@
           }
         }
 
-        &:not([aria-current='true']):is(:hover, :focus-visible) {
+        &:not([aria-current="true"]):is(:hover, :focus-visible) {
           border-color: var(--sl-color-gray-2);
         }
       }
@@ -412,13 +420,13 @@
       overflow-y: hidden;
     }
 
-    ul[role='tablist'] {
+    ul[role="tablist"] {
       border-bottom-width: 1px;
 
-      a[role='tab'] {
+      a[role="tab"] {
         padding-block: 0.25rem;
 
-        &:not([aria-selected='true']):hover {
+        &:not([aria-selected="true"]):hover {
           border-color: var(--sl-color-white);
           color: var(--sl-color-white);
         }
@@ -479,7 +487,9 @@
     &.starlight-aside--note {
       --sl-moonlight-asides-bg-color: var(--sl-color-blue-low);
       --sl-moonlight-asides-link-color: var(--sl-color-blue-accent);
-      --sl-moonlight-asides-link-hover-color: var(--sl-color-blue-accent-invert);
+      --sl-moonlight-asides-link-hover-color: var(
+        --sl-color-blue-accent-invert
+      );
       --sl-moonlight-asides-table-alt-color: var(--sl-color-blue-alt);
       --sl-moonlight-asides-table-border-color: var(--sl-color-blue-alt-invert);
     }
@@ -487,17 +497,25 @@
     &.starlight-aside--tip {
       --sl-moonlight-asides-bg-color: var(--sl-color-purple-low);
       --sl-moonlight-asides-link-color: var(--sl-color-purple-accent);
-      --sl-moonlight-asides-link-hover-color: var(--sl-color-purple-accent-invert);
+      --sl-moonlight-asides-link-hover-color: var(
+        --sl-color-purple-accent-invert
+      );
       --sl-moonlight-asides-table-alt-color: var(--sl-color-purple-alt);
-      --sl-moonlight-asides-table-border-color: var(--sl-color-purple-alt-invert);
+      --sl-moonlight-asides-table-border-color: var(
+        --sl-color-purple-alt-invert
+      );
     }
 
     &.starlight-aside--caution {
       --sl-moonlight-asides-bg-color: var(--sl-color-orange-low);
       --sl-moonlight-asides-link-color: var(--sl-color-orange-accent);
-      --sl-moonlight-asides-link-hover-color: var(--sl-color-orange-accent-invert);
+      --sl-moonlight-asides-link-hover-color: var(
+        --sl-color-orange-accent-invert
+      );
       --sl-moonlight-asides-table-alt-color: var(--sl-color-orange-alt);
-      --sl-moonlight-asides-table-border-color: var(--sl-color-orange-alt-invert);
+      --sl-moonlight-asides-table-border-color: var(
+        --sl-color-orange-alt-invert
+      );
     }
 
     &.starlight-aside--danger {
@@ -560,9 +578,13 @@
   .sl-steps > li:last-of-type::after {
     --guide-width: 1px;
 
-    background: linear-gradient(to bottom, var(--sl-color-hairline-light), var(--sl-color-bg) 85%);
+    background: linear-gradient(
+      to bottom,
+      var(--sl-color-hairline-light),
+      var(--sl-color-bg) 85%
+    );
     bottom: var(--bullet-margin);
-    content: '';
+    content: "";
     inset-inline-start: calc((var(--bullet-size) - var(--guide-width)) / 2);
     position: absolute;
     top: calc(var(--bullet-size) + var(--bullet-margin));
@@ -580,7 +602,7 @@
     --sl-badge-success-text: var(--sl-color-blue-high);
     --sl-badge-danger-text: var(--sl-color-red-high);
 
-    [data-theme='light'] & {
+    [data-theme="light"] & {
       --sl-badge-default-bg: var(--sl-color-blue-low);
       --sl-badge-default-text: var(--sl-color-blue-high);
       --sl-badge-tip-bg: var(--sl-color-purple-low);

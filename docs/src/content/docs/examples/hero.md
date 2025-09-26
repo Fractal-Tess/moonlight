@@ -9,15 +9,15 @@ hero:
     file: ../../../assets/hero.webp
   actions:
     - text: Primary action
-      link: '#_'
+      link: "#_"
       icon: right-arrow
       variant: primary
     - text: Secondary action
-      link: '#_'
+      link: "#_"
       icon: right-arrow
       variant: secondary
     - text: Minimal action
-      link: '#_'
+      link: "#_"
       icon: external
       variant: minimal
 ---
