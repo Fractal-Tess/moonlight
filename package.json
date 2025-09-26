@@ -5,6 +5,7 @@
   "description": "Starlight theme inspired by the Visual Studio Code Vitesse theme.",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
+  "prettier": "@fractal-tess/prettier-config",
   "scripts": {
     "lint": "astro check --noSync && pnpm -r lint",
     "format": "prettier -w --cache --ignore-unknown .",
@@ -15,6 +16,7 @@
     "@astrojs/check": "^0.9.4",
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.7",
+    "@fractal-tess/prettier-config": "^0.1.2",
     "@hideoo/eslint-config": "^4.0.0",
     "@hideoo/prettier-config": "^2.0.0",
     "@types/node": "^24.5.2",

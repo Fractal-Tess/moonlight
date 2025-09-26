@@ -5,9 +5,8 @@ import starlightThemeMoonlight from 'starlight-theme-moonlight'
 export default defineConfig({
   integrations: [
     starlight({
-      credits: true,
       editLink: {
-        baseUrl: 'https://github.com/HiDeoo/starlight-theme-moonlight/edit/main/docs/',
+        baseUrl: 'https://github.com/fractal-tess/moonlight/edit/main/docs/',
       },
       plugins: [starlightThemeMoonlight()],
       sidebar: [
@@ -24,12 +23,8 @@ export default defineConfig({
           autogenerate: { directory: 'examples' },
         },
       ],
-      social: [
-        { href: 'https://bsky.app/profile/hideoo.dev', icon: 'blueSky', label: 'Bluesky' },
-        { href: 'https://github.com/HiDeoo/starlight-theme-moonlight', icon: 'github', label: 'GitHub' },
-      ],
+      social: [{ href: 'https://github.com/fractal-tess/moonlight', icon: 'github', label: 'GitHub' }],
       title: 'Starlight Moonlight',
     }),
   ],
-  site: 'https://starlight-theme-moonlight.vercel.app',
 })

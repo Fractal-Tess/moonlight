@@ -91,8 +91,8 @@
   /**
    * Light mode
    */
-  :root[data-theme='light'],
-  [data-theme='light'] ::backdrop {
+  :root[data-theme="light"],
+  [data-theme="light"] ::backdrop {
     --sl-color-white: oklch(30% 0.015 var(--sl-hue-base));
     --sl-color-gray-1: oklch(36% 0.018 var(--sl-hue-base));
     --sl-color-gray-2: oklch(36% 0.018 var(--sl-hue-base));
