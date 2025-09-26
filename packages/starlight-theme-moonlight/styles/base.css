@@ -595,16 +595,16 @@
    * Badges
    */
   .sl-badge {
-    --sl-badge-default-text: var(--sl-color-blue-high);
+    --sl-badge-default-text: var(--sl-color-blue-hgh);
     --sl-badge-tip-text: var(--sl-color-purple-high);
     --sl-badge-caution-text: var(--sl-color-orange-high);
     --sl-badge-note-text: var(--sl-color-blue-high);
-    --sl-badge-success-text: var(--sl-color-blue-high);
+    --sl-badge-success-text: var(--sl-color-blue-hgh);
     --sl-badge-danger-text: var(--sl-color-red-high);
 
     [data-theme="light"] & {
       --sl-badge-default-bg: var(--sl-color-blue-low);
-      --sl-badge-default-text: var(--sl-color-blue-high);
+      --sl-badge-default-text: var(--sl-color-blue-hgh);
       --sl-badge-tip-bg: var(--sl-color-purple-low);
       --sl-badge-tip-text: var(--sl-color-purple-high);
       --sl-badge-caution-bg: var(--sl-color-orange-low);
@@ -612,7 +612,7 @@
       --sl-badge-note-bg: var(--sl-color-blue-low);
       --sl-badge-note-text: var(--sl-color-blue-high);
       --sl-badge-success-bg: var(--sl-color-blue-low);
-      --sl-badge-success-text: var(--sl-color-blue-high);
+      --sl-badge-success-text: var(--sl-color-blue-hgh);
       --sl-badge-danger-bg: var(--sl-color-red-low);
       --sl-badge-danger-text: var(--sl-color-red-high);
     }
@@ -631,7 +631,7 @@
     &.primary {
       background-color: var(--sl-color-blue-low);
       border: 1px solid var(--sl-color-blue);
-      color: var(--sl-color-blue-high);
+      color: var(--sl-color-blue-hgh);
 
       &:is(:hover, :focus-visible) {
         border-color: oklch(52% 0.11 var(--sl-hue-blue));
@@ -666,7 +666,7 @@
     border: 1px solid var(--sl-color-blue);
     border-radius: 0.5rem;
     box-shadow: none;
-    color: var(--sl-color-blue-high);
+    color: var(--sl-color-blue-hgh);
     line-height: 1.4;
     margin-block: 2rem -0.5rem;
     margin-inline: var(--sl-content-pad-x);

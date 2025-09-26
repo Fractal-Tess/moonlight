@@ -2,8 +2,8 @@
   "name": "starlight-theme-moonlight",
   "version": "0.5.1",
   "license": "MIT",
-  "description": "Starlight theme inspired by the Visual Studio Code Vitesse theme.",
-  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
+  "description": "Starlight theme inspired by the rapide starlight theme",
+  "author": "fractal-tess",
   "type": "module",
   "exports": {
     ".": "./index.ts",
@@ -40,11 +40,11 @@
     "documentation",
     "astro"
   ],
-  "homepage": "https://github.com/HiDeoo/starlight-theme-moonlight",
+  "homepage": "https://github.com/fractal-tess/moonlight",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HiDeoo/starlight-theme-moonlight.git",
+    "url": "https://github.com/fractal-tess/moonlight.git",
     "directory": "packages/starlight-theme-moonlight"
   },
-  "bugs": "https://github.com/HiDeoo/starlight-theme-moonlight/issues"
+  "bugs": "https://github.com/fractal-tess/moonlight/issues"
 }
